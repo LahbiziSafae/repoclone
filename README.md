@@ -1,49 +1,27 @@
-## Overview
+# MyProfile
 
-An example project to demonstrate:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
-* how to create a Spring Boot REST API ([article](https://tomgregory.com/building-a-spring-boot-application-in-jenkins/) | [video](https://youtu.be/sCcuUMn1vdM))
-* how to run Spring Boot in Docker and publish to Docker Hub ([article](https://tomgregory.com/building-a-spring-boot-application-in-docker-and-jenkins/) | [video](https://youtu.be/Kc3Vw5vk1Lw))
-* how to deploy the Spring Boot application to AWS with CloudFormation ([article](https://tomgregory.com/deploying-a-spring-boot-application-into-aws-with-jenkins/) | [video](https://youtu.be/5xh0nAYeZNc))
+## Development server
 
-## Pre-requisites
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-* JDK 11+
-* Docker
+## Code scaffolding
 
-## Building
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Testing
+## Build
 
-`./gradlew test`
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-### Building (no tests)
+## Running unit tests
 
-`./gradlew assemble`
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### Building (with tests)
+## Running end-to-end tests
 
-`./gradlew build`
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-### Running in Docker
+## Further help
 
-`./gradlew assemble docker dockerRun`
-
-### Stopping Docker container
-
-`./gradlew dockerStop`
-
-### Deploying to AWS
-
-`./gradlew awsCfnMigrateStack awsCfnWaitStackComplete -PsubnetId=<your-subnet-id> -Pregion=<your-region>`
-
-### Deleting AWS deployment
-
-`./gradlew awsCfnDeleteStack awsCfnWaitStackComplete`
-
-## Using API
-
-* get all rides - GET [/ride](http://localhost:8080/ride) to get a list of all the rides
-* get specific ride - GET [/ride/${id}](http://localhost:8080/ride/1) to get a specific ride
-* create ride - POST JSON to [/ride](http://localhost:8080/ride) to create a new ride 
-(see [article](https://tomgregory.com/building-a-spring-boot-application-in-jenkins/#2_Trying_out_our_Spring_Boot_application) for full details)
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
